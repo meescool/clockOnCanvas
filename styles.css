@@ -1,5 +1,6 @@
 body {
   display: flex;
+  margin: 3rem auto;
   align-items: center;
   justify-content: center;
 }
