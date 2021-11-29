@@ -44,6 +44,7 @@ clock.drawCircle(r1 * 0.1, r2, colors.purple, widths.medium, colors.purple);
 setInterval(render, 1000); // 1000 milliseconds = 1 sec
 
 function render() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
   const clock = new Clock(r1, r2, ctx);
   clock.drawCircle(r1, r2, colors.purple, widths.large, colors.lavender);
   clock.clockSegments(r1, r2, colors.purple, widths.medium);
