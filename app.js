@@ -3,7 +3,7 @@ import Hands from './js/hands.js';
 
 /**
  * @author Marcela Estrada
- *   A simple clock app using
+ *   A simple clock animated app using the Canvas element
  **/
 
 const canvas = document.getElementById("canvas");
@@ -43,6 +43,10 @@ clock.drawCircle(r1 * 0.1, r2, colors.purple, widths.medium, colors.purple);
 
 setInterval(render, 1000); // 1000 milliseconds = 1 sec
 
+/**
+ * This function runs the whole clock program.
+ * 
+ */
 function render() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   const clock = new Clock(r1, r2, ctx);

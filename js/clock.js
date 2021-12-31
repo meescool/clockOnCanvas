@@ -12,6 +12,12 @@ export default class Clock {
   }
   /**
    * draw the clock structure
+  * @param {number} r - inner edge of the frame of the clock
+   * @param {number} xy - outer edge of the frame of the clock
+   * @param {string} color - the color for the line
+   * @param {number} width - the width of the clock structure
+   * @param {number} width - the width of the line
+   * @param {string} bgColor - the color of the clock structure
    **/
   drawCircle(r, xy, color, width, bgColor) {
     // the first 2 parameters represent the coordinates of the center of the
