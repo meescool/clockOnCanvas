@@ -45,18 +45,23 @@ setInterval(render, 1000); // 1000 milliseconds = 1 sec
 
 /**
  * This function runs the whole clock program.
- * 
+ * @param {clock} clock - object that contains the clock class
+ * @param {hands} hands - object that contains the hands class
  */
 function render() {
+  // clear the canvas during each loop to keep a crisp drawing
   ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  // setting up the clock
   const clock = new Clock(r1, r2, ctx);
   clock.drawCircle(r1, r2, colors.purple, widths.large, colors.lavender);
   clock.clockSegments(r1, r2, colors.purple, widths.medium);
 
-  // backupClock();
+  // setting up the hands
   const hands = new Hands(r1, r2, ctx, colors, widths);
   hands.setUpHands();
 
+  // drawing the final clock
   clock.drawCircle(r1 * 0.1, r2, colors.purple, widths.medium, colors.purple);
 
 }

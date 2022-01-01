@@ -1,3 +1,4 @@
+// Draw class
 export default class Draw {
   constructor() {
 

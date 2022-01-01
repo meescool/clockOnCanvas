@@ -12,20 +12,18 @@ export default class Clock {
   }
   /**
    * draw the clock structure
-  * @param {number} r - inner edge of the frame of the clock
+   * @param {number} r - inner edge of the frame of the clock
    * @param {number} xy - outer edge of the frame of the clock
    * @param {string} color - the color for the line
-   * @param {number} width - the width of the clock structure
    * @param {number} width - the width of the line
    * @param {string} bgColor - the color of the clock structure
    **/
   drawCircle(r, xy, color, width, bgColor) {
-    // the first 2 parameters represent the coordinates of the center of the
-    // circle, 3rd is the radius, and last two are start and end angle
-
     this.ctx.beginPath();
     this.ctx.lineWidth = width;
     this.ctx.strokeStyle = color;
+    // the first 2 parameters represent the coordinates of the center of the
+    // circle, 3rd is the radius, and last two are start and end angle
     this.ctx.arc(xy, xy, r, 0, 2 * Math.PI);
     this.ctx.fillStyle = bgColor;
     this.ctx.fill();
@@ -35,6 +33,10 @@ export default class Clock {
 
   /**
    * draw the five minute marks on the clock using trig
+   * @param {number} r1 - radius of the clock
+   * @param {number} r2 - outer radius
+   * @param {string} color - the color for the line
+   * @param {number} width - the width of the line
    **/
   clockSegments(r1, r2, color, width) {
     const draw = new Draw();
