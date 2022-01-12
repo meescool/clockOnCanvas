@@ -1,4 +1,4 @@
-![A picture of a purple clock](https://raw.githubusercontent.com/meescool/meescool/main/images/clockOnCanvas/clock.png) 
+![A picture of a purple clock](https://raw.githubusercontent.com/meescool/meescool/main/images/clockOnCanvas/clock.PNG) 
 
 # Clock on Canvas
 
