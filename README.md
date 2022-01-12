@@ -2,7 +2,8 @@
 
 # Clock on Canvas
 
-This repo stores a web page that shows a real time clock.
+This repo stores a web page that shows a real time clock. 
+You can see the end result here: https://clockoncanvas.meescool.repl.co/
 
 ## Technologies used
 Developed with the Canvas element of HTML5 and JavaScript. 
